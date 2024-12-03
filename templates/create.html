@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2>{{ 'Update Post' if post else 'Create a New Post' }}</h2>
+    <form action="{{ url_for('blog.update', post_id=post['id']) if post else url_for('blog.create') }}" method="POST">
+        <!-- Post Title -->
+        <div class="mb-3">
+            <label for="title" class="form-label">Post Title</label>
+            <input type="text" class="form-control" id="title" name="title" value="{{ post['title'] if post else '' }}">
+        </div>
+        <!-- Post Body -->
+        <div class="mb-3">
+            <label for="body" class="form-label">Post Body</label>
+            <textarea class="form-control" id="body" name="body" rows="10">{{ post['body'] if post else '' }}</textarea>
+        </div>
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">{{ 'Update Blog' if post else 'Create Blog' }}</button>
+    </form>
+</div>
+{% endblock %}

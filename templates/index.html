@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    {% for post in posts %}
+    <div class="col-sm-6 mb-4">
+        <div class="card h-100 text-center">
+            <div class="card-body">
+                <h5 class="card-title">{{ post.title }}</h5>
+                <p class="card-text">{{ post.body | truncate(50, True) }}.</p>
+                <a href="{{url_for('blog.show',post_id=post.id)}}" class="btn btn-primary">Read more</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

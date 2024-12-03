@@ -1,0 +1,92 @@
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Headings (H1-H6) */
+h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+/* H1 - Main Blog Title */
+h1 {
+    font-size: 2.5rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.3rem;
+}
+
+/* H2 - Section Headers */
+h2 {
+    font-size: 2rem;
+    color: #2980b9;
+}
+
+/* H3 */
+h3 {
+    font-size: 1.75rem;
+}
+
+/* H4 */
+h4 {
+    font-size: 1.5rem;
+}
+
+/* H5 */
+h5 {
+    font-size: 1.25rem;
+}
+
+/* H6 */
+h6 {
+    font-size: 1rem;
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+/* Paragraphs */
+p {
+    color: #053846;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #1abc9c;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 1rem;
+    text-align: center;
+}
+p#footer {
+    color: #f4f1f1;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+
+footer a {
+    color: #ecf0f1;
+}
+
+footer a:hover {
+    color: #bc7e1a;
+}
